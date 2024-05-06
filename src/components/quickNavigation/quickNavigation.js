@@ -1,8 +1,6 @@
 import { GrHomeRounded } from "react-icons/gr";
 import { FaLinesLeaning } from "react-icons/fa6";
-import { IoBookOutline } from "react-icons/io5";
-import { LuBookmark, LuSend} from "react-icons/lu";
-
+import { LuBookOpen, LuBookmark, LuSend } from "react-icons/lu";
 
 const QuickNavigationBar = () => {
   return (
@@ -16,16 +14,16 @@ const QuickNavigationBar = () => {
         <button className="p-2 rounded-lg bg-primary lg:p-4">
           <FaLinesLeaning className="text-[1.35rem] fill-white lg:text-[1.6rem]" />
         </button>
-         {/* Books */}
-         <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
-          <IoBookOutline className="text-[1.35rem] text-gray-600 transition-all ease-in-out duration-75 group-hover:stroke-primary group-hover:fill-primary lg:text-[1.6rem]" />
+        {/* Books */}
+        <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
+          <LuBookOpen className="text-[1.35rem] text-gray-600 transition-all ease-in-out duration-75 group-hover:stroke-primary group-hover:fill-primary lg:text-[1.6rem]" />
         </button>
-         {/* Bookmark */}
-         <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
+        {/* Bookmark */}
+        <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
           <LuBookmark className="text-[1.35rem] text-gray-600 transition-all ease-in-out duration-75 group-hover:stroke-primary group-hover:fill-primary lg:text-[1.6rem]" />
         </button>
-         {/* Send */}
-         <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
+        {/* Send */}
+        <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
           <LuSend className="text-[1.35rem] text-gray-600 transition-all ease-in-out duration-75 group-hover:stroke-primary group-hover:fill-primary lg:text-[1.6rem]" />
         </button>
       </div>
