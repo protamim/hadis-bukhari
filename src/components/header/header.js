@@ -39,7 +39,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search hadith"
-                className="border-2 border-gray-300 rounded-lg h-full w-full pl-8 outline-none text-[1.16]"
+                className="border-2 border-gray-300 rounded-lg h-full w-full pl-8 outline-none text-[1.16rem]"
               />
             </div>
           </form>

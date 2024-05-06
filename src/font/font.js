@@ -10,5 +10,10 @@ const kalpurush = localFont({
         weight: '400',
         style: 'italic',
       },
+      {
+        path: './KFGQ.otf',
+        weight: '400',
+        style: 'normal',
+      }
     ],
   })
