@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Chakra } from "@/providers/chakra";
+import QuickNavigationBar from "@/components/quickNavigation/quickNavigation";
 
 const kalpurush = localFont({ src: "../font/kalpurush.ttf" });
 
@@ -22,9 +23,9 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* Quick navigation */}
-          <h4 className="bg-slate-300 fixed bottom-0 w-full z-10 lg:h-[calc(100vh-80px)] lg:w-[100px] lg:left-0">
-            Quick Navigation
-          </h4>
+          <div className="bg-white fixed bottom-0 w-full z-10 px-4 lg:h-[calc(100vh-80px)] lg:w-[100px] lg:left-0 lg:flex lg:items-center">
+            <QuickNavigationBar />
+          </div>
 
           {/* category navigation for larger devices */}
           <h5 className="bg-lime-200 hidden lg:block lg:h-[calc(100vh-80px)] lg:w-[400px] lg:fixed lg:left-[100px] overflow-y-auto">
