@@ -28,9 +28,9 @@ export default CategoryNavigation;
 const ODDAY = [
   { id: "১", title: "ওহীর সূচনা অধ্যায়", range: "১ - ৭", path: "/" },
   { id: "২", title: "ঈমান", range: "৮ - ৫৮", path: "/imaan" },
-  { id: "৩", title: "ইল্‌ম", range: "৫৯ - ১৩৪", path: "#" },
-  { id: "৪", title: "ওজু", range: "১৩৫ - ২৪৭", path: "#" },
-  { id: "৫", title: "গোসল", range: "২৪৮ - ২৯৩", path: "#" },
-  { id: "৬", title: "হায়েজ", range: "২৯৪ - ৩৩৩", path: "#" },
-  { id: "৭", title: "তায়াম্মুম", range: "৩৩৪ - ৩৪৮", path: "#" },
+  { id: "৩", title: "ইল্‌ম", range: "৫৯ - ১৩৪", path: "/elam" },
+  { id: "৪", title: "ওজু", range: "১৩৫ - ২৪৭", path: "/oju" },
+  { id: "৫", title: "গোসল", range: "২৪৮ - ২৯৩", path: "/gusol" },
+  { id: "৬", title: "হায়েজ", range: "২৯৪ - ৩৩৩", path: "/hayej" },
+  { id: "৭", title: "তায়াম্মুম", range: "৩৩৪ - ৩৪৮", path: "/tayammum" },
 ];

@@ -19,7 +19,7 @@ const DynamicContainer = ({ pageName, pageData, oddayNo }) => {
         {/* category title */}
         <CategoryTitle slNo={oddayNo} title={pageName} />
         {/* All Hadish Odday 1 */}
-        {pageData.map((item) => (
+        {pageData?.map((item) => (
           <OddayCard key={item?.id} item={item} />
         ))}
       </div>

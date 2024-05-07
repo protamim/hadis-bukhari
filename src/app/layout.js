@@ -6,7 +6,7 @@ import QuickNavigationBar from "@/components/quickNavigation/quickNavigation";
 import CategoryNavigation from "@/components/categoryNavigation/categoryNavigation";
 import { MobileCategoryNavigation } from "@/components/categoryNavigation";
 import { Suspense } from "react";
-import { Skeleton } from "@chakra-ui/react";
+import LoadingSkeleton from "./loading";
 
 const kalpurush = localFont({ src: "../font/kalpurush.ttf" });
 export const kfgq = localFont({ src: "../font/KFGQ.otf" });
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
               <MobileCategoryNavigation />
             </div>
             {/* Dynamic content - Content container */}
-            <Suspense fallback={<Skeleton />}>
+            <Suspense fallback={<LoadingSkeleton />}>
             {children}
             </Suspense>
           </main>
