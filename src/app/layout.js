@@ -5,6 +5,8 @@ import { Chakra } from "@/providers/chakra";
 import QuickNavigationBar from "@/components/quickNavigation/quickNavigation";
 import CategoryNavigation from "@/components/categoryNavigation/categoryNavigation";
 import { MobileCategoryNavigation } from "@/components/categoryNavigation";
+import { Suspense } from "react";
+import { Skeleton } from "@chakra-ui/react";
 
 const kalpurush = localFont({ src: "../font/kalpurush.ttf" });
 export const kfgq = localFont({ src: "../font/KFGQ.otf" });
@@ -23,12 +25,12 @@ export default function RootLayout({ children }) {
       >
         <Chakra>
           {/* Header */}
-          <div className="bg-white px-4 mb-4 border-b border-gray-100 shadow-sm fixed top-0 w-full z-40 lg:border-none lg:shadow-none">
+          <div className="bg-white px-4 mb-4 border-b border-gray-100 shadow-lg fixed top-0 w-full z-40 lg:border-none lg:shadow-none">
             <Header />
           </div>
 
           {/* Quick navigation */}
-          <div className="bg-white fixed bottom-0 w-full z-20 px-4 shadow-xl lg:h-[calc(100vh-80px)] lg:w-[100px] lg:left-0 lg:flex lg:items-center">
+          <div className="bg-white fixed bottom-0 w-full z-20 px-4 drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)] lg:drop-shadow-none lg:h-[calc(100vh-80px)] lg:w-[100px] lg:left-0 lg:flex lg:items-center lg:flex-col lg:justify-center">
             <QuickNavigationBar />
           </div>
 
@@ -44,7 +46,9 @@ export default function RootLayout({ children }) {
               <MobileCategoryNavigation />
             </div>
             {/* Dynamic content - Content container */}
+            <Suspense fallback={<Skeleton />}>
             {children}
+            </Suspense>
           </main>
         </Chakra>
       </body>

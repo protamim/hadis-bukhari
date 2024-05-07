@@ -7,7 +7,7 @@ const HadishCardTop = ({ slNo, type }) => {
           <svg
             width="25"
             height="25"
-            class="fill-[#2B9E76]"
+            className="fill-[#2B9E76]"
             viewBox="0 0 25 25"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

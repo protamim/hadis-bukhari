@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const OddayList = ({ data }) => {
@@ -10,8 +11,9 @@ const OddayList = ({ data }) => {
   return (
     <>
       {data.map((item, index) => (
-        <div
+        <Link
           key={item.id}
+          href={item.path}
           onClick={() => handleActive(index)}
           className={`${
             isActive === index ? "bg-green-100" : "bg-transparent"
@@ -28,7 +30,7 @@ const OddayList = ({ data }) => {
             </h6>
             <svg
               className={`${
-                isActive === index ? "fill-primary" : 'fill-slate-200'
+                isActive === index ? "fill-primary" : "fill-slate-200"
               }  group-hover:fill-primary `}
               width="56"
               height="62"
@@ -50,7 +52,7 @@ const OddayList = ({ data }) => {
               <span>{item.range}</span>
             </p>
           </div>
-        </div>
+        </Link>
       ))}
     </>
   );

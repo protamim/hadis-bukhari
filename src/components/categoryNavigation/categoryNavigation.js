@@ -26,11 +26,11 @@ const CategoryNavigation = () => {
 export default CategoryNavigation;
 
 const ODDAY = [
-  { id: "১", title: "ওহীর সূচনা অধ্যায়", range: "১ - ৭" },
-  { id: "২", title: "ঈমান", range: "৮ - ৫৮" },
-  { id: "৩", title: "ইল্‌ম", range: "৫৯ - ১৩৪" },
-  { id: "৪", title: "ওজু", range: "১৩৫ - ২৪৭" },
-  { id: "৫", title: "গোসল", range: "২৪৮ - ২৯৩" },
-  { id: "৬", title: "হায়েজ", range: "২৯৪ - ৩৩৩" },
-  { id: "৭", title: "তায়াম্মুম", range: "৩৩৪ - ৩৪৮" },
+  { id: "১", title: "ওহীর সূচনা অধ্যায়", range: "১ - ৭", path: "/" },
+  { id: "২", title: "ঈমান", range: "৮ - ৫৮", path: "/imaan" },
+  { id: "৩", title: "ইল্‌ম", range: "৫৯ - ১৩৪", path: "#" },
+  { id: "৪", title: "ওজু", range: "১৩৫ - ২৪৭", path: "#" },
+  { id: "৫", title: "গোসল", range: "২৪৮ - ২৯৩", path: "#" },
+  { id: "৬", title: "হায়েজ", range: "২৯৪ - ৩৩৩", path: "#" },
+  { id: "৭", title: "তায়াম্মুম", range: "৩৩৪ - ৩৪৮", path: "#" },
 ];

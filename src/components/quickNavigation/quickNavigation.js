@@ -1,6 +1,7 @@
 import { GrHomeRounded } from "react-icons/gr";
 import { FaLinesLeaning } from "react-icons/fa6";
 import { LuBookOpen, LuBookmark, LuSend } from "react-icons/lu";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 const QuickNavigationBar = () => {
   return (
@@ -25,6 +26,10 @@ const QuickNavigationBar = () => {
         {/* Send */}
         <button className="group p-2 rounded-lg transition-all ease-in-out duration-100 hover:bg-slate-100 lg:p-4">
           <LuSend className="text-[1.35rem] text-gray-600 transition-all ease-in-out duration-75 group-hover:stroke-primary group-hover:fill-primary lg:text-[1.6rem]" />
+        </button>
+        {/* Support */}
+        <button className="hidden lg:block lg:fixed lg:bottom-[20px] lg:left-[20px] rounded-lg bg-primary lg:p-4">
+          <BiSolidDonateHeart className="text-[1.35rem] fill-white lg:text-[1.6rem]" />
         </button>
       </div>
     </>

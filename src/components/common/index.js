@@ -6,6 +6,9 @@ import ArabicText from "./arabicText";
 import Bornito from "./bornito";
 import OptionsButton from "./optionsButton";
 import OddayCard from "./oddayCard";
+import Breadcrumb from "./breadcrumb";
+import BookName from "./bookName";
+import DynamicContainer from "./dynamicContainer";
 
 export {
   Text,
@@ -15,5 +18,8 @@ export {
   ArabicText,
   Bornito,
   OptionsButton,
-  OddayCard
+  OddayCard,
+  Breadcrumb,
+  BookName,
+  DynamicContainer
 };
