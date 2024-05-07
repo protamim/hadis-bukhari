@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* Main Content Area */}
-          <main className="bg-transparent overflow-y-auto px-4 fixed top-0 h-screen w-full z-10 pt-20 pb-[75px] lg:pb-9 lg:top-[95px] lg:h-[calc(100vh-95px)] lg:pt-0 lg:pl-[120px] xl:w-[calc(100%-500px)] xl:right-0 xl:pl-6 xl:pt-0 xl:top-[100px] xl:pb-[7.625rem]">
+          <main className="bg-transparent custom-scrollbar overflow-y-auto px-4 fixed top-0 h-screen w-full z-10 pt-20 pb-[75px] lg:pb-9 lg:top-[95px] lg:h-[calc(100vh-95px)] lg:pt-0 lg:pl-[120px] xl:w-[calc(100%-500px)] xl:right-0 xl:pl-6 xl:pt-0 xl:top-[100px] xl:pb-[7.625rem]">
             {/* Category Navigation for mobile */}
             <div className="mb-6 xl:hidden">
               <MobileCategoryNavigation />

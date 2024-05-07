@@ -1,5 +1,5 @@
-import SeacrhField from "./searchField";
-import OddayList from "./oddayList";
+import SeacrhField from "./searchField/searchField";
+import OddayList from "./oddayList/oddayList";
 import TabButtons from "./tabButtons/tabButtons";
 
 const CategoryNavigation = () => {
@@ -13,7 +13,7 @@ const CategoryNavigation = () => {
         <SeacrhField />
       </div>
       {/* Odday */}
-      <div className="px-4 h-[calc(100vh-280px)] overflow-y-auto">
+      <div className="px-4 h-[calc(100vh-280px)] overflow-y-auto custom-scrollbar">
         <div className="flex items-center flex-col gap-y-2">
           {/* Items */}
           <OddayList data={ODDAY} />
